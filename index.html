@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Open+Sans:wght@400;700&&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Open+Sans:wght@400;700&&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&family=Open+Sans:wght@400;700&&display=swap"
+      />
+    </noscript>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <div class="grow flex flex-col space-y-4 place-content-center">
+      <h1
+        class="text-sky-800 uppercase text-lg text-center font-sans font-bold"
+      >
+        What Jerry has done
+      </h1>
+      <p class="text-5xl text-center font-serif">Literally nothing.</p>
+    </div>
+    <p class="mb-4 text-slate-300 text-center font-sans">
+      A straightforward way to track what Jerry has done | Last update <span id="lastUpdateTime">
+    </p>
+    <script>
+      document.getElementById("lastUpdateTime").innerHTML = document.lastModified;
+    </script>
+  </body>
+</html>
